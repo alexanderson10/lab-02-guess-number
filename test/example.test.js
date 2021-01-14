@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';import
-import { compareNumbers } from '../utils.js'
+import { compareNumbers } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -20,9 +20,9 @@ test('if numbers dont match return -1', (expect) => {
 
 });
 test('if numbers dont match because guess is too low return 1', (expect) => {
-    const guess = 6
+    const guess = 6;
     const correctNumber = 7;
     const expected = -1;
     const actual = compareNumbers(guess, correctNumber);
     expect.equal(actual, expected);
-})
+});
